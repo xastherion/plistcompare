@@ -7,30 +7,38 @@ mGui = Tk()
 lista_cmd = [
     'ls',
     'ifconfig',
-    'echo "XXXXX - OOOOO - XXXXX"'
+    'echo "XXXXX - OOOOO - XXXXX"',
+    '',
+    ''
 ]
-# ================ End Defaults Commands =====================
 
+lista_elem = (len(lista_cmd)) # --> cuenta los elementos en la lista_cmd
+
+# ================ End Defaults Commands =====================
 
 # ---------------- Dialog Boxes building ------------
 def command_01():
     ment_01 = StringVar(mGui, value=lista_cmd[0])
-    Label(mGui, text='Primer Comando')
-    Entry(mGui, textvariable=ment_01, width=100).pack(fill=Y)
-    Button(mGui, text='Ejecutar', command=lambda : os.system(ment_01.get())).pack(fill=Y)
+    frame_01 = Frame(mGui)
+    Entry(frame_01, textvariable=ment_01, width=100).pack(side=LEFT)
+    Button(frame_01, text='Ejecutar', command=lambda: os.system(ment_01.get())).pack(side=RIGHT)
+    frame_01.pack()
 
 
 def command_02():
     ment_02 = StringVar(mGui, value=lista_cmd[1])
-    Entry(mGui, textvariable=ment_02, width=100).pack(fill=Y)
-    Button(mGui, text='Ejecutar', command=lambda : os.system(ment_02.get())).pack(fill=Y)
+    frame_02 = Frame(mGui)
+    Entry(frame_02, textvariable=ment_02, width=100).pack(side=LEFT)
+    Button(frame_02, text='Ejecutar', command=lambda: os.system(ment_02.get())).pack(side=RIGHT)
+    frame_02.pack()
 
 
 def command_03():
     ment_03 = StringVar(mGui, value=lista_cmd[2])
-    Entry(mGui, textvariable=ment_03, width=100).pack(fill=Y)
-    Button(mGui, text='Ejecutar', command=lambda : os.system(ment_03.get())).pack(fill=Y)
-
+    frame_03 = Frame(mGui)
+    Entry(frame_03, textvariable=ment_03, width=100).pack(side=LEFT)
+    Button(frame_03, text='Ejecutar', command=lambda: os.system(ment_03.get())).pack(side=RIGHT)
+    frame_03.pack()
 
 # Call to DialogBox  Principal Commands
 command_01()
