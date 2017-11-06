@@ -23,6 +23,5 @@ one_command()
 
 exit_button = Button(mGui, text='Exit',command=exit_command).grid(row=1, column=7)
 
-
 # -------------------------------------------------------------------
 mainloop()
