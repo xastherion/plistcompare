@@ -6,9 +6,13 @@ con la finalidad de ayudar a los administradores de macos a encontrar cambios de
 a traves de los medios tradicionales.
 
 Como funciona:
-1.- Corres el script, asi el realizará una Screen de la carpeta de preferencias, 
-2.- Haces el cambio en la configuracion que deseas p.e. fondo de pantalla
-3.- Encuentras los archivos cambiados recientemente
-4.- Comparas los cambios
-5.- Puedes usar TM para retroceder en el Tiempo y obtener el archivo antiguo
 
+1.- Corres el script, asi el realizará una Screen de la carpeta de preferencias
+
+2.- Haces el cambio en la configuracion que deseas p.e. fondo de pantalla
+
+3.- Encuentras los archivos cambiados recientemente
+
+4.- Comparas los cambios
+
+5.- Puedes usar TM para retroceder en el Tiempo y obtener el archivo antiguo
