@@ -17,8 +17,11 @@ Como funciona:
 
 5.- Puedes usar TM para retroceder en el Tiempo y obtener el archivo antiguo
 
-Adicional Tools
+Herramientas adicionales:
+
 
 Junto a plistcompare he programado multi_command_executer.py que tiene la habilidad de escribir preferencias. No es un editor de preferencias especializado. Realmente es un simple "ejecutador de comandos" pero la idea no es ejecutar un comando cat o ls que son cortos he inolvidables, sino que es editar estas listas de preferencias que siempre hay que volver a editar, y que ademas a veces hay que modificar un poco. 
 
 Cuando el Administrador tiene estas preferencias bien identificadas, puede agregarlas a la lista lista_cmd y apareceran como comandos por defecto en las entradas del programa.
+
+Todavia tengo por objetivo, eliminar las funciones para cada comando, pues es mas lógico en un contador controle la cantidad de comandos y veces que la funcion se ejecuta, pero mis pocos conocimientos de python todavia no me lo han permitido.
