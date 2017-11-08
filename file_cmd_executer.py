@@ -4,7 +4,16 @@ from tkinter import *
 archivo = open('commands.dat', "r")
 
 mGui = Tk()
-#ment = StringVar()
+ment = StringVar()
+
+def exit_command():
+    quit()
+
+
+def sys_command():    # -- parece que no hace nada
+    mtext = ment.get()
+    os.system(mtext)
+    return
 
 
 while True:
@@ -17,17 +26,10 @@ while True:
     Button(mGui, text='Ejecutar', command=sys_command).pack()
 
 
-def exit_command():
-    quit()
 
 
-def sys_command():    # -- parece que no hace nada
-    mtext = ment.get()
-    os.system(mtext)
-    return
 
-
-returnButton(mGui, text='Exit',command=exit_command).grid(row=1, column=7)
+#returnButton(mGui, text='Exit',command=exit_command).grid(row=1, column=7)
 
 
 archivo.closed

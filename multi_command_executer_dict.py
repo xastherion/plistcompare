@@ -24,6 +24,7 @@ lista_cmd = {
 
 # ---------------- Dialog Boxes building ---------------------------
 for cont in lista_cmd:
+    print(cont)
     def command_01():
         leer_lista = StringVar(mGui, value=lista_cmd[cont])
         framex = Frame(mGui)
@@ -33,6 +34,9 @@ for cont in lista_cmd:
 
     command_01()
 # ================ End Dialog Boxes building =======================
+
+
+
 
 # ---- Building Exit Button ------
 exit_button = Button(mGui, text='Exit', command=lambda : quit()).pack()

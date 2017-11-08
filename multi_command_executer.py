@@ -13,7 +13,6 @@ lista_cmd = [
 ]
 
 lista_elem = (len(lista_cmd)) # --> cuenta los elementos en la lista_cmd
-
 # ================ End Defaults Commands =====================
 
 # ---------------- Dialog Boxes building ------------
@@ -39,15 +38,18 @@ def command_03():
     Entry(frame_03, textvariable=ment_03, width=100).pack(side=LEFT)
     Button(frame_03, text='Ejecutar', command=lambda: os.system(ment_03.get())).pack(side=RIGHT)
     frame_03.pack()
+# ================ End Dialog Boxes building ==================
 
-# Call to DialogBox  Principal Commands
+
+# Call to Dialog Boxes Principal Commands
 command_01()
 command_02()
 command_03()
 
 # ---- Building Exit Button ------
 exit_button = Button(mGui, text='Exit', command=lambda : quit()).pack()
-# ---- End Building Exit Button --
+# ==== End Building Exit Button ==
+
 
 # -------------------------------------------------------------------
 mainloop()

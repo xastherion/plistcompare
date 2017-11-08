@@ -1,6 +1,4 @@
 ls
-echo "-----------------"
-touch test.txt
-echo "testtestest">>test.txt
-ls -lha
-cat test.txt
+ifconfig
+cat
+help
