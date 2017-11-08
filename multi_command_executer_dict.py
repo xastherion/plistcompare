@@ -35,9 +35,6 @@ for cont in lista_cmd:
     command_01()
 # ================ End Dialog Boxes building =======================
 
-
-
-
 # ---- Building Exit Button ------
 exit_button = Button(mGui, text='Exit', command=lambda : quit()).pack()
 # ==== End Building Exit Button ==
